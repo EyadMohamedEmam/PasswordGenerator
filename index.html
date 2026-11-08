@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Gen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pass Gen</h1>
+        <button id="theme-toggle">Dark/Light</button>
+    </header>
+
+    <main>
+        <section>
+            <h2>Generated Passwords</h2>
+            <ul id="password-list"></ul>
+            <button id="copy-btn">Copy All</button>
+        </section>
+
+        <section>
+            <h2>Password Strength</h2>
+            <ul id="strength-list"></ul>
+        </section>
+
+        <section>
+            <h2>Password Options</h2>
+            <form>
+                <label for="password-length">Password Length:</label>
+                <input type="number" id="password-length" value="12" min="6" max="50"><br>
+
+                <input type="checkbox" id="uppercase" checked> <label for="uppercase">Uppercase</label><br>
+                <input type="checkbox" id="lowercase" checked> <label for="lowercase">Lowercase</label><br>
+                <input type="checkbox" id="number" checked> <label for="number">Numbers</label><br>
+                <input type="checkbox" id="special-characters"> <label for="special-characters">Special Characters</label><br>
+
+                <input type="reset">
+                <button type="button" id="generate-btn">Generate Passwords</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>History</h2>
+            <ul id="history-list"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Write down your chosen password in a safe place to remember it.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
